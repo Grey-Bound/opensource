@@ -1,10 +1,10 @@
 # Bitcoin Product Security & Production Readiness Checklist
 
 **Version:** 0.1  
-**Maintained by:** Greybound  
+**Maintained by:** GreyBound  
 **Last updated:** August 2026
 
-This checklist is used by Greybound during Bitcoin Product Security & Production Readiness Reviews.  
+This checklist is used by GreyBound during Bitcoin Product Security & Production Readiness Reviews.  
 It focuses on real-world production risks rather than theoretical issues.
 
 ---
@@ -62,4 +62,4 @@ For each finding use the following priority:
 
 ---
 
-**Note:** This checklist is a living document and will evolve with Greybound’s engineering practice.
+**Note:** This checklist is a living document and will evolve with GreyBound’s engineering practice.

@@ -1,46 +1,65 @@
 # Bitcoin Product Security & Production Readiness Checklist
 
-Practical checklist used by Greybound when reviewing Bitcoin products.
+**Version:** 0.1  
+**Maintained by:** Greybound  
+**Last updated:** August 2026
 
-## 1. Wallet Architecture
-- [ ] Key generation and storage approach
-- [ ] Multisig / threshold scheme (if any)
-- [ ] Recovery and backup flows
-- [ ] Seed / key exposure risks
-- [ ] Non-custodial vs hybrid model clarity
-
-## 2. Payment & Settlement
-- [ ] On-chain transaction flow
-- [ ] Lightning integration (if present)
-- [ ] Fee handling and bumping
-- [ ] Reconciliation and accounting
-- [ ] Failure and retry logic
-
-## 3. Node Infrastructure
-- [ ] Node configuration hardening
-- [ ] Network exposure
-- [ ] Monitoring and alerting
-- [ ] Backup and recovery of node data
-- [ ] Update and maintenance process
-
-## 4. Backend & API
-- [ ] Authentication and authorization
-- [ ] Input validation
-- [ ] Rate limiting
-- [ ] Secrets management
-- [ ] Logging and sensitive data exposure
-
-## 5. Operational Security
-- [ ] Access control
-- [ ] Deployment process
-- [ ] Incident response readiness
-- [ ] Dependency management
-
-## Priority Levels
-- Critical
-- High
-- Medium
-- Low
+This checklist is used by Greybound during Bitcoin Product Security & Production Readiness Reviews.  
+It focuses on real-world production risks rather than theoretical issues.
 
 ---
-Used by Greybound in Bitcoin Product Security & Production Readiness Reviews.
+
+## 1. Scope Definition
+- [ ] Clear system boundaries defined
+- [ ] Components in scope identified (wallet, payments, nodes, backend, etc.)
+- [ ] Trust assumptions documented
+
+## 2. Key Management & Wallet Architecture
+- [ ] Key generation method reviewed
+- [ ] Key storage and protection mechanisms
+- [ ] Multisig / threshold signature design (if applicable)
+- [ ] Recovery and backup procedures
+- [ ] Exposure points for private keys or seeds
+- [ ] Separation of duties (if multi-party)
+
+## 3. Transaction & Payment Flows
+- [ ] Transaction construction and signing flow
+- [ ] Fee estimation and management
+- [ ] RBF / CPFP handling
+- [ ] Lightning-specific flows (if present)
+- [ ] Failure handling and retries
+- [ ] Reconciliation mechanisms
+
+## 4. Node & Infrastructure
+- [ ] Node configuration reviewed
+- [ ] Network exposure and firewall rules
+- [ ] Authentication to node interfaces
+- [ ] Monitoring and alerting coverage
+- [ ] Backup and restore procedures
+- [ ] Update and patch management process
+
+## 5. Backend & API Security
+- [ ] Authentication and authorization model
+- [ ] Input validation and sanitization
+- [ ] Secrets management
+- [ ] Rate limiting and abuse protection
+- [ ] Logging practices (sensitive data exposure)
+- [ ] Error handling
+
+## 6. Operational Security
+- [ ] Access control model
+- [ ] Deployment pipeline security
+- [ ] Dependency management and updates
+- [ ] Incident response readiness
+- [ ] Principle of least privilege applied
+
+## 7. Risk Classification
+For each finding use the following priority:
+- **Critical** — Direct risk of fund loss or severe compromise
+- **High** — Significant security or reliability risk
+- **Medium** — Notable weakness
+- **Low** — Best practice improvement
+
+---
+
+**Note:** This checklist is a living document and will evolve with Greybound’s engineering practice.

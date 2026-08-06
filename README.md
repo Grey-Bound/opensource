@@ -1,2 +1,7 @@
-# opensource
-Open-source software maintained by GreyBound.
+# Open Source
+
+Open-source projects developed and maintained by GreyBound.
+
+Current status:
+
+Work in progress.

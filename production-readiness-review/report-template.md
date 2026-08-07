@@ -1,41 +1,48 @@
-# Production Readiness Review Report
+# Production Readiness Review Report Template
 
 ## Executive Summary
+- Overall Production Readiness
+- Key Strengths
+- Critical Concerns
+- Immediate Priorities
 
-## System Overview
+## Scope
+- Systems Reviewed
+- Out of Scope
 
-## Review Scope
+## Methodology
+Brief description of the review approach.
 
-## Key Findings
+## Overall Assessment
+Maturity by area + Overall Risk Level
 
-### Critical
+## Risk Register
+List of findings with:
+- Finding ID
+- Title
+- Severity
+- Description
+- Business Impact
+- Recommendation
+- Priority
 
-### High
+## Findings by Domain
+- Wallet Architecture
+- Payment Infrastructure
+- Node Infrastructure
+- Backend & APIs
+- Operational Security
+- Monitoring
+- etc.
 
-### Medium
+## Prioritized Roadmap
+- Phase 1: Immediate (0–2 weeks)
+- Phase 2: Near-term (2–6 weeks)
+- Phase 3: Long-term (6+ weeks)
 
-### Low
+## Engineering Recommendations
+- Can be implemented internally
+- Recommended with external support
 
-## Detailed Findings
-
-### Architecture & Infrastructure
-
-### Wallet & Key Management
-
-### Transaction & Payment Flows
-
-### Backend & APIs
-
-### Monitoring & Observability
-
-### Backup & Recovery
-
-### Operational Security
-
-### Scalability
-
-## Recommended Remediation
-
-## Prioritized Action Plan
-
-## Next Steps
+## Appendix
+- Review metadata
